@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.top{
+    background: #D1891C;
+    padding-left: 20px;
+}
+h1{
+    background: #00669F;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 15px;
+}
+.article{
+    background: #F3F3F3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    width: 300px;
+    height: 580px;
+    margin: 20px;
+    display: inline-block;
+}
+.fondo{
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 170px;
+}
+.corazon{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 35px;
+}
+.foto{
+    width: 120px;
+    position: absolute;
+    top: 110px;
+    left: 90px;
+}
+.contenido{
+    position: absolute;
+    padding-top: 80px;
+}
+h2{
+    text-align: center;
+}
+.parrafo{
+    margin: 10px;
+}
+button{
+    font-size: 16px;
+    padding: 10px 35px;
+    background: #00669F;
+    color: #FFFFFF;
+    position: absolute;
+    left: 80px;
+    top: 330px
+}
+.circulo{
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    top: 680px;
+}
+.mas{
+    width: 25px;
+    position: fixed;
+    top: 695px;
+    right: 33px;
+}
+.footer{
+    color: #FFFFFF;
+    background: #00669F;
+    padding: 10px 0px 10px 15px;
+    text-align: center;
+    font-size: 9px;
+}
+.github{
+    width: 50px; 
+    position: fixed;
+    bottom: 7px;
+    right: 7px;
+}
