@@ -6,6 +6,12 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+main {
+    /* padding: 35px 0px; */
+    /* Alto del main: alto viewport - alto Header - alto Footer 
+       Me aseguro que el main ocupa todo el alto disponible */
+    min-height: calc(100vh - 77.6px - 31.2px);  
+}
 .top{
     background: #D1891C;
     padding-left: 20px;
@@ -21,8 +27,8 @@ h1{
     border-top-right-radius: 50px;
     position: relative;
     width: 300px;
-    height: 580px;
-    margin: 20px;
+    height: 568px;
+    margin: 10px 20px 0px 20px;
     display: inline-block;
 }
 .fondo{
@@ -53,7 +59,9 @@ h2{
 .parrafo{
     margin: 10px;
 }
-button{
+.boton{
+    text-decoration: none;
+    border-radius: 2px;
     font-size: 16px;
     padding: 10px 35px;
     background: #00669F;
