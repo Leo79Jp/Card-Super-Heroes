@@ -3,14 +3,22 @@
     margin: 0px;
     padding: 0px;
 }
+/* ------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+  }
+
+/* -------------------------------------------------------------------- */
 body{
     font-family: 'Roboto', sans-serif;
 }
 main {
-    /* padding: 35px 0px; */
-    /* Alto del main: alto viewport - alto Header - alto Footer 
-       Me aseguro que el main ocupa todo el alto disponible */
     min-height: calc(100vh - 77.6px - 31.2px);  
+    display: flex;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
 }
 .top{
     background: #D1891C;
@@ -29,7 +37,7 @@ h1{
     width: 300px;
     height: 568px;
     margin: 10px 20px 0px 20px;
-    display: inline-block;
+    flex-flow: wrap;
 }
 .fondo{
     width: 100%;
@@ -71,27 +79,36 @@ h2{
     top: 330px
 }
 .circulo{
-    width: 50px;
+    width: 40px;
     position: fixed;
     right: 20px;
-    top: 680px;
+    top: 650px;
 }
 .mas{
     width: 25px;
     position: fixed;
-    top: 695px;
-    right: 33px;
+    top: 660px;
+    right: 28px;
 }
-.footer{
+.p_footer{
     color: #FFFFFF;
     background: #00669F;
     padding: 10px 0px 10px 15px;
-    text-align: center;
+    text-align: right;
     font-size: 9px;
+    width: 100%;
 }
 .github{
-    width: 50px; 
-    position: fixed;
-    bottom: 7px;
-    right: 7px;
+    width: 40px; 
+    height: 10px;
+    margin-left: 40%;
+    margin-right: 10px;
+    background: #00669F;
 }
+
+@media (max-width: 600px) {
+    .github{
+        margin-left: 20%;
+    }
+    
+  }
