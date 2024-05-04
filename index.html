@@ -8,17 +8,15 @@
     <title>Card Super Heroes</title>
 </head>
 <header>
-    <p class ="top">Descuentos 20%</p>
+    <p class ="top" id="slide-1">Descuentos 20%</p>
     <h1>Card Super Heroes</h1>
 </header>
 <body>
     <main>
         <section>
-            <span>
-                <img class="circulo"src="img/Ellipse 2.png" alt="" >
-                <img class="mas"src="img/+.png" alt="">
+            <span> 
+                <img class="mas" id="posicionMas" src="img/+.png" alt="">
             </span>
-           
             <article class="article"  id="slide-1">
                 <img class="fondo"src="img/Mask Group.png"alt="">
                 <img class="foto"src="img/Group 22.png" alt="">
@@ -26,7 +24,7 @@
                 <div class="contenido">
                     <h2>BATMAN</h2>
                     <p class="parrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-                    <a class="boton"  href="#slide-2">Ver mas</a>
+                    <a class="boton" onclick="slide_2()" href="#slide-2">Ver mas</a>
                 </div>
             </article>
 
@@ -50,18 +48,18 @@
                     <p class="parrafo">Es un superhéroe que apareció por primera vez en los cómics estadounidenses publicados por DC Comics. ​
                     El personaje fue creado por el escritor estadounidense Jerry Siegel y el artista canadiense Joe Shuster en 1933 cuando ambos se encontraban viviendo en Cleveland, Ohio.
                     </p>
-                    <a class="boton"  href="#slide-4">Ver mas</a>
+                    <a class="boton" onclick="slide_4()" href="#slide-4">Ver mas</a>
                 </div>
             </article>
 
-            <article class="article"  id="slide-4">
+            <article class="article fin"  id="slide-4">
                 <img class="fondo"src="img/Mask Group3.png"alt="">
                 <img class="foto"src="img/Group 25.png" alt="">
                 <img class="corazon"src="img/Frame.png" alt="">
                 <div class="contenido">
                     <h2>Harley Quinn</h2>
                     <p class="parrafo">Harley Quinn es un personaje ficticio creado por los estadounidenses Paul Dini y Bruce Timm para la editorial DC Comics. Quinn hizo su debut en el vigésimo-segundo episodio de Batman: la serie animada, «El favor del Joker», en septiembre de 1992 y se convirtió en una villana recurrente en la serie</p>
-                    <a class="boton"  href="#slide-1">Ver mas</a>
+                    <a class="boton"  onclick="slide_1()" href="#slide-1">Ver mas</a>
                 </div>
             </article>
             
@@ -74,3 +72,36 @@
         
 </footer>
 </html>
+
+<script>
+    var anchoPagina="";
+    var posicion = document.getElementById('posicionMas');
+    function slide_2() {
+        var anchoPagina = screen.width // toma el ancho de pagina 
+        if (anchoPagina < 1024) {
+            posicion.style.top = "570px";
+        }
+    }
+</script>
+
+<script>
+    var anchoPagina="";
+    var posicion = document.getElementById('posicionMas');
+    function slide_4() {
+        var anchoPagina = screen.width // toma el ancho de pagina 
+        if (anchoPagina < 1024) {
+            posicion.style.top = "725px";
+        }
+    }
+</script>
+
+<script>
+    var anchoPagina="";
+    var posicion = document.getElementById('posicionMas');
+    function slide_1() {
+        var anchoPagina = screen.width // toma el ancho de pagina 
+        if (anchoPagina < 1024) {
+            posicion.style.top = "657px";
+        }
+    }
+</script>
